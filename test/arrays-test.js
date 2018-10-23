@@ -18,7 +18,9 @@ describe('arrays', () => {
 
   describe('addElementToBeginningOfArray(array, element)', () => {
     it('adds an element to the beginning of an array', () => {
-      expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
+      var destination = [1]
+      var item = 'foo'
+      expect(addElementToBeginningOfArray(destination, item)).to.eql([item, 1])
     })
 
     it('does not alter the original array', () => {
